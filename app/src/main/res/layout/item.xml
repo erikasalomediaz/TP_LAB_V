@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estación"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tvBarrio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Barrio" />
+
+    <TextView
+        android:id="@+id/tvDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direccion" />
+
+    <LinearLayout
+        android:id="@+id/llImagenes"
+        android:orientation="horizontal"
+        android:layout_height="80dp"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llBicis"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:layout_width="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivDispo"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bicidispo" />
+
+        <TextView
+            android:id="@+id/tvBiciDis"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="40dp"
+            android:text="0" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llDocks"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:layout_width="wrap_content">
+    <ImageView
+        android:id="@+id/ivNoDispo"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/docksdispo" />
+        <TextView
+            android:id="@+id/tvDocksDis"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:text="0" />
+        </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
